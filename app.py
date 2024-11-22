@@ -171,7 +171,11 @@ def load_models():
 
 # Main function
 def main():
-    url = input("Enter the URL: ")  # For Colab environment
+    # Uncomment below for command-line execution (e.g., app.py <url>)
+    # import sys
+    # url = sys.argv[1]
+
+    url = input("Enter the URL: ")  # For IDE execution
 
     # Feature extraction
     features = extract_features(url)
